@@ -1,0 +1,6 @@
+<section class="phx-hero">
+  <h2><%= gettext "Welcome to %{name}!", name: "Vocial" %></h2>
+  <p class="lead">A social voting app!</p>
+</section>
+
+<%= render(DiscussWeb.SharedView, "_chat.html", messages: @messages, chatroom: "lobby") %>
